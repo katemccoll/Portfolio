@@ -1,0 +1,14 @@
+:root {
+    --white: #ffffff;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+#home {
+    background-image: url(/assets/images/dunedin_light.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+}
