@@ -6,9 +6,24 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
 #home {
-    background-image: url(/assets/images/dunedin_light.jpg);
+    background-image: url(../images/dunedin_light.jpg);
     background-size: cover;
     background-position: center;
     color: var(--white);
+    display: flex;
+    height: 1000px;
+    justify-content: center;
+
+}
+
+.center {
+    margin: 10rem;
+    padding: 2rem;
+    text-align: center;
+    font-size: xxx-large;
 }
