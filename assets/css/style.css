@@ -41,10 +41,12 @@ header h1 {
     color: var(--white);
 }
 
-.line-blink {
-    border-right: 0.2rem solid;
+.cursor {
+    border-bottom: 0.4rem solid;
     animation: caret 1s steps(1) infinite;
-
+    padding: 0 1rem 0 1rem;
+    font-size: 0;
+    margin-left: 0.5rem;
 }
 
 @keyframes caret {
@@ -100,6 +102,15 @@ nav a:hover {
     font-size: xxx-large;
 }
 
+.text-align {
+    text-align: center;
+    margin: auto;
+    padding-top: 4rem;
+    width: 80%;
+    border-bottom: 0.5rem solid var(--darker-pink);
+}
+
+
 /* Text boxes */
 
 .box {
@@ -121,8 +132,9 @@ nav a:hover {
 /* About Me and Work */
 
 #profile {
-    border: 0.2rem solid var(--darker-pink);
+    border: 5px solid var(--darker-pink);
     border-radius: 1rem;
+    width: 25vw;
 
 }
 

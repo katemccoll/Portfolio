@@ -28,7 +28,7 @@ function renderSkill(skillName, maxDurationMs) {
         letters++;
         let characters = skillName.substring(0, letters);
         $("#typewriter").html(characters);
-        $("#typewriter").addClass('.line-blink');
+        // $("#typewriter").addClass('.line-blink');
         if (letters < skillName.length) {
             setTimeout(typewriterTimer, renderSpeed);
         }
