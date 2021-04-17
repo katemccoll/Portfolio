@@ -11,16 +11,11 @@ $(document).ready(function () {
         if (skillIndex >= mySkills.length) {
             skillIndex = 0;
         }
+        setTimeout(showNextSkill, skillDurationMs);
     };
 
     showNextSkill();
-    setInterval(showNextSkill, skillDurationMs);
-
 });
-
-
-
-
 
 function renderSkill(skillName, maxDurationMs) {
     let letters = 0;
@@ -29,15 +24,18 @@ function renderSkill(skillName, maxDurationMs) {
         renderSpeed = maxDurationMs / skillName.length;
     }
 
-    let typewriterTimer = setInterval(function() {
+    let typewriterTimer = function() {
         letters++;
         let characters = skillName.substring(0, letters);
         $("#typewriter").html(characters);
-        if (letters >= skillName.length) {
-            clearInterval(typewriterTimer);
+        $("#typewriter").addClass('.line-blink');
+        if (letters < skillName.length) {
+            setTimeout(typewriterTimer, renderSpeed);
         }
-    }, renderSpeed);
+    };
 
+
+    typewriterTimer();
 
 }
 

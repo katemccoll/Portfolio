@@ -41,28 +41,43 @@ header h1 {
     color: var(--white);
 }
 
+.line-blink {
+    border-right: 0.2rem solid;
+    animation: caret 1s steps(1) infinite;
+
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
 nav ul {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
     padding-right: 0;
     height: 100%;
+    justify-content: space-around;
 }
 
 nav ul li {
     display: inline;
-    font-size: 1vw;
-    padding: 10px 15px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+
 }
 
 nav a {
     color: var(--white);
-    padding: 5px 10px 5px;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    text-decoration: none;
 }
 
+nav a:hover {
+    border: 0.2rem solid var(--white);
+    border-radius: 1rem;
+}
 
 #home {
     background-image: url(../images/dunedin_light.jpg);
@@ -73,7 +88,8 @@ nav a {
     display: flex;
     width: -webkit-fill-available;
     justify-content: center;
-    height: 70rem;
+    height: 50rem;
+    align-items: center;
 }
 
 .center {
@@ -93,10 +109,12 @@ nav a {
     text-align: end;
 }
 
-.name {
-    width: 400px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+#logo {
+    border: 0.2rem solid var(--white);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    background-color: var(--darker-pink);
 }
 
 /* About Me and Work */
