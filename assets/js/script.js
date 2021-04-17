@@ -1,17 +1,20 @@
 
 $(document).ready(function () {
     const mySkills = ['Web Developer', 'Artist', 'Lego Builder', 'Puzzle Master'];
-    let newSkill = 1;
-    renderSkill(mySkills[0]);
-    setInterval(function() {
+    let skillIndex = 0;
+    const skillDurationMs = 4000;
+    const renderDurationMs = skillDurationMs / 2;
 
-        renderSkill(mySkills[newSkill]);
-        newSkill++;
-        if (newSkill >= mySkills.length) {
-            newSkill = 0;
+    let showNextSkill = function() {
+        renderSkill(mySkills[skillIndex], renderDurationMs);
+        skillIndex++;
+        if (skillIndex >= mySkills.length) {
+            skillIndex = 0;
         }
+    };
 
-    }, 4000);
+    showNextSkill();
+    setInterval(showNextSkill, skillDurationMs);
 
 });
 
@@ -19,8 +22,13 @@ $(document).ready(function () {
 
 
 
-function renderSkill(skillName) {
+function renderSkill(skillName, maxDurationMs) {
     let letters = 0;
+    let renderSpeed = 100;
+    if ((skillName.length * renderSpeed) > maxDurationMs) {
+        renderSpeed = maxDurationMs / skillName.length;
+    }
+
     let typewriterTimer = setInterval(function() {
         letters++;
         let characters = skillName.substring(0, letters);
@@ -28,7 +36,7 @@ function renderSkill(skillName) {
         if (letters >= skillName.length) {
             clearInterval(typewriterTimer);
         }
-    }, 100);
+    }, renderSpeed);
 
 
 }
