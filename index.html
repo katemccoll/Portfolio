@@ -5,25 +5,158 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css"/>
     <title>Kate</title>
 </head>
 
 <body>
-    <nav>
-        <div ><i class="fas fa-bars"></i></div>
-    </nav>
-    <main id="home">
-        <div class="center">
-            <h2>Kate McColl</h2>
-            <h1>Web Developer</h1>
-        </div>
 
 
-    </main>
-<script src="./assets/js/script.js"></script>
+        <header>
+            <h1 class="box name">Kate McColl</h1>
+            <nav id="navbar">
+                <ul>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#work">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact_me">Contact Me</a>
+                    </li>
+                    <li>
+                        <a href="http://google.com" target="_blank">Resume</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home">
+            <div class="center">
+                <h2>Kate McColl</h2>
+                <h1 id="typewriter"></h1>
+            </div>
+        </section>
+       <main>
+
+           <article class="container">
+               <section class="column">
+                   <h2 id="about_me" class="heading">About Me</h2>
+                   <p class="content">
+                       PLACEHOLDER TEXT BELOW. PLEASE WRITE SOMETHING ABOUT YOURSELF.
+                   </p>
+                   <p class="content">
+                       I like space, space is my life. I went up to space and listened to two other men walk on the moon.
+                       I am often forgotten. But no longer! I will become the best coder and I shall never be forgotten
+                       again!
+                   </p>
+                   <p class="content">
+                       I am now retired, but want something to keep me active. Web development is the way of the future and
+                       I want to get on board!
+                   </p>
+               </section>
+           </article>
+           <article class="work-container">
+               <section class="column">
+                   <h2 id="work" class="heading">Work</h2>
+                   <!-- Large Image Project 1 -->
+                   <article class="content">
+                       <a href="https://katemccoll.github.io/Week_1_Homework_Assignment/">
+                           <img class="large_image" alt="Image of Horiseon Website"
+                                src="./Assets/images/01-html-css-git-homework-demo.png" target="_blank">
+                           <div class="text-block">
+                               <h3>Debugging: Horiseon</h3>
+                               <p>HTML/CSS</p>
+                           </div>
+                       </a>
+                   </article>
+                   <!-- Small Images Inline -->
+                   <section class="content project">
+                       <!-- Project 2 -->
+                       <article class="leading-project">
+                           <div>
+                               <a href="http://google.com">
+                                   <img class="small_image" alt="lego" src="./Assets/images/lego.jpeg" target="_blank">
+                                   <div class="text-block">
+                                       <h3>Placeholder</h3>
+                                       <p>Image</p>
+                                   </div>
+                               </a>
+                           </div>
+                       </article>
+                       <!-- Project 3 -->
+                       <article>
+                           <div>
+                               <a href="http://google.com">
+                                   <img alt="lego" src="./Assets/images/lego.jpeg" class="small_image" target="_blank">
+                                   <div class="text-block">
+                                       <h3>Placeholder</h3>
+                                       <p>Image</p>
+                                   </div>
+                               </a>
+                           </div>
+                       </article>
+                   </section>
+                   <!-- Small Images Inline -->
+                   <section class="content project">
+                       <!-- Project 4 -->
+                       <article class="leading-project">
+                           <div>
+                               <a href="http://google.com">
+                                   <img class="small_image" alt="lego" src="./Assets/images/lego.jpeg" target="_blank">
+                                   <div class="text-block">
+                                       <h3>Placeholder</h3>
+                                       <p>Image</p>
+                                   </div>
+                               </a>
+
+                           </div>
+                       </article>
+                       <!-- Project 5 -->
+                       <article>
+                           <div>
+                               <a href="http://google.com">
+                                   <img alt="lego" src="./Assets/images/lego.jpeg" class="small_image" target="_blank">
+                                   <div class="text-block">
+                                       <h3>Placeholder</h3>
+                                       <p>Image</p>
+                                   </div>
+                               </a>
+                           </div>
+                       </article>
+                   </section>
+
+               </section>
+           </article>
+        </main>
+        <footer class="container">
+            <div class="column">
+                <h2 id="contact_me" class="heading">Contact Me</h2>
+                    <ul class="content">
+                        <li>
+                            <a href="#">Phone</a>
+                        </li>
+                        <li>
+                            <a href="#">Website</a>
+                        </li>
+                        <li>
+                            <a href="#">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="#">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="#">Spotify</a>
+                        </li>
+                    </ul>
+            </div>
+
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

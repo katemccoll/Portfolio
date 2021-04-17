@@ -1,32 +1,41 @@
 
-// Typewriter
+$(document).ready(function () {
+    const mySkills = ['Web Developer', 'Artist', 'Lego Builder', 'Puzzle Master'];
+    let newSkill = 1;
+    renderSkill(mySkills[0]);
+    setInterval(function() {
 
-document.addEventListener('DOMContentLoaded', function() {
-    const dataText = ['Web Developer', 'Artist', 'Lego Builder', 'Web Developer'];
-    function typeWriter(text, i, fnCallback) {
-        if (i < (text.length)) {
-            document.querySelector('h1').innerHTML =
-                text.substring(0, i+1) + '<span aria-hidden="true"></span>';
-                setTimeout(function() {
-                typeWriter(text, i + 1, fnCallback)
-            }, 100);
+        renderSkill(mySkills[newSkill]);
+        newSkill++;
+        if (newSkill >= mySkills.length) {
+            newSkill = 0;
         }
-        else if (typeof fnCallback == 'function') {
-            setTimeout(fnCallback, 700);
+
+    }, 4000);
+
+});
+
+
+
+
+
+function renderSkill(skillName) {
+    let letters = 0;
+    let typewriterTimer = setInterval(function() {
+        letters++;
+        let characters = skillName.substring(0, letters);
+        $("#typewriter").html(characters);
+        if (letters >= skillName.length) {
+            clearInterval(typewriterTimer);
         }
-    }
-    function startTextAnimation(i) {
-        if (typeof dataText[i] == 'undefined') {
-            setTimeout(function() {
-                startTextAnimation(0);
-            }, 20000);
-        }
-        if (i < dataText[i].length) {
-            typeWriter(dataText[i], 0,
-                function() {
-                startTextAnimation(i + 1);
-            });
-        }
-    }
-    startTextAnimation(0);
-    });
+    }, 100);
+
+
+}
+
+
+
+
+// when page loads, I want to bring up first index in the array, after one second, change to the next array
+
+
