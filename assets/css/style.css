@@ -72,6 +72,7 @@ nav a {
     padding: 0.5rem 1rem;
     margin: 1rem;
     text-decoration: none;
+    border: 0.2rem solid transparent;
 }
 
 nav a:hover {
@@ -118,6 +119,12 @@ nav a:hover {
 }
 
 /* About Me and Work */
+
+#profile {
+    border: 0.2rem solid var(--darker-pink);
+    border-radius: 1rem;
+
+}
 
 .container {
     display: flex;
