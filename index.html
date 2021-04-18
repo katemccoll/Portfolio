@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1228d6a68f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css"/>
     <title>Kate</title>
 </head>
@@ -22,7 +21,7 @@
                         <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#work">Portfolio</a>
+                        <a href="#portfolio">Portfolio</a>
                     </li>
                     <li>
                         <a href="#contact_me">Contact Me</a>
@@ -42,94 +41,77 @@
         </section>
        <main>
 
-           <div class="text-align">
+           <div id="about">
                <img id="profile" src="assets/images/Me.jpg" alt="Kate McColl">
            </div>
-           <article class="container">
+           <article id="about-me">
+                   <p>
+                       Hello! I am Kate, I am a kiwi that is currently living over in Melbourne. I am an artist that sells works in my free time. My current career is based in customer service and I am in need of a new challenge.
+                   </p>
+                   <p>
+                       Which brings me here! I am currently enrolled at a web developer bootcamp at Monash Univeristy. Yes, bit of a strange jump from artist to computers, but I believe that creating code is like creating a painting.
+                       You are given a blank canvas and asked to make something beautiful. You have your materials, HTML, CSS and JavaScript. Technique, jQuery, bootstrap and node. I believe that my skills I have learnt being an artist will
+                       be able to translate well into Web Developer. I am also starting to learn how to do digital art! (Re write but something like this?
 
-
-               <section class="column">
-                   <h2 id="about_me" class="heading">About Me</h2>
-                   <p class="content">
-                       PLACEHOLDER TEXT BELOW. PLEASE WRITE SOMETHING ABOUT YOURSELF.
                    </p>
-                   <p class="content">
-                       I like space, space is my life. I went up to space and listened to two other men walk on the moon.
-                       I am often forgotten. But no longer! I will become the best coder and I shall never be forgotten
-                       again!
-                   </p>
-                   <p class="content">
-                       I am now retired, but want something to keep me active. Web development is the way of the future and
-                       I want to get on board!
-                   </p>
-               </section>
            </article>
            <article class="work-container">
-               <section class="column">
-                   <h2 id="work" class="heading">Work</h2>
-                   <!-- Large Image Project 1 -->
-                   <article class="content">
-                       <a href="https://katemccoll.github.io/Week_1_Homework_Assignment/">
-                           <img class="large_image" alt="Image of Horiseon Website"
-                                src="./Assets/images/01-html-css-git-homework-demo.png" target="_blank">
-                           <div class="text-block">
-                               <h3>Debugging: Horiseon</h3>
-                               <p>HTML/CSS</p>
+               <section>
+                   <article id="main-project">
+                       <div class="text-block">
+                           <p id="featured">Featured Project</p>
+                           <h3 class="featured-title">Marvel SuperHero Locator</h3>
+                           <p id="featured-description">A website made for Marvel fans, by Marvel fans. You can search for your favourite heroes and receive their image, information, comics and youtube videos.</p>
+                           <ul>
+                               <li>jQuery</li>
+                               <li>API</li>
+                               <li>Local Storage</li>
+                           </ul>
+                           <div class="icon">
+                               <a href="https://katemccoll.github.io/TeamProject-Marvel-Superhero-Locator" target="_blank"><i class="fas fa-link"></i></a>
+                               <a href="https://github.com/katemccoll/TeamProject-Marvel-Superhero-Locator" target="_blank"><i class="fab fa-github-square"></i></a>
                            </div>
-                       </a>
+                       </div>
+                       <img class="large_image" src="./assets/images/portfolio/marvel_superhero_locator.JPG" alt="Marvel Superhero Locator">
                    </article>
                    <!-- Small Images Inline -->
-                   <section class="content project">
+                   <section class="row">
                        <!-- Project 2 -->
-                       <article class="leading-project">
+                       <article class="small-project">
                            <div>
-                               <a href="http://google.com">
-                                   <img class="small_image" alt="lego" src="./Assets/images/lego.jpeg" target="_blank">
+                                   <img class="small_image" alt="Weather Dashboard" src="./assets/images/portfolio/weather_dashboard.JPG" target="_blank">
                                    <div class="text-block">
-                                       <h3>Placeholder</h3>
-                                       <p>Image</p>
+                                       <h3 class="featured-title">Weather Dashboard</h3>
+                                       <p>Using Open Weather Map API to build a weather dashboard to search any city's current weather and forecast for the next five days.</p>
+                                       <ul>
+                                           <li>jQuery</li>
+                                           <li>API</li>
+                                           <li>Local Storage</li>
+                                       </ul>
+                                       <div class="icon">
+                                           <a href="https://katemccoll.github.io/Weather_Dashboard/" target="_blank"><i class="fas fa-link"></i></a>
+                                           <a href="https://github.com/katemccoll/Weather_Dashboard" target="_blank"><i class="fab fa-github-square"></i></a>
+                                       </div>
                                    </div>
-                               </a>
                            </div>
                        </article>
                        <!-- Project 3 -->
-                       <article>
+                       <article class="small-project">
                            <div>
-                               <a href="http://google.com">
-                                   <img alt="lego" src="./Assets/images/lego.jpeg" class="small_image" target="_blank">
+                                   <img alt="Day Planner" src="./assets/images/portfolio/work_day.JPG" class="small_image" >
                                    <div class="text-block">
-                                       <h3>Placeholder</h3>
+                                       <h3 class="featured-title">Day Planner</h3>
                                        <p>Image</p>
+                                       <ul>
+                                           <li>jQuery</li>
+                                           <li>Bootstrap</li>
+                                           <li>Local Storage</li>
+                                       </ul>
+                                       <div class="icon">
+                                           <a href="https://katemccoll.github.io/Work_Day_Scheduler/Develop/index.html" target="_blank"><i class="fas fa-link"></i></a>
+                                           <a href="https://github.com/katemccoll/Work_Day_Scheduler" target="_blank"><i class="fab fa-github-square"></i></a>
+                                       </div>
                                    </div>
-                               </a>
-                           </div>
-                       </article>
-                   </section>
-                   <!-- Small Images Inline -->
-                   <section class="content project">
-                       <!-- Project 4 -->
-                       <article class="leading-project">
-                           <div>
-                               <a href="http://google.com">
-                                   <img class="small_image" alt="lego" src="./Assets/images/lego.jpeg" target="_blank">
-                                   <div class="text-block">
-                                       <h3>Placeholder</h3>
-                                       <p>Image</p>
-                                   </div>
-                               </a>
-
-                           </div>
-                       </article>
-                       <!-- Project 5 -->
-                       <article>
-                           <div>
-                               <a href="http://google.com">
-                                   <img alt="lego" src="./Assets/images/lego.jpeg" class="small_image" target="_blank">
-                                   <div class="text-block">
-                                       <h3>Placeholder</h3>
-                                       <p>Image</p>
-                                   </div>
-                               </a>
                            </div>
                        </article>
                    </section>
@@ -137,28 +119,16 @@
                </section>
            </article>
         </main>
-        <footer class="container">
-            <div class="column">
+        <footer>
                 <h2 id="contact_me" class="heading">Contact Me</h2>
                     <ul class="content">
                         <li>
-                            <a href="#">Phone</a>
+                            <a href="https://katemccollart.com" target="_blank">Art Portfolio</a>
                         </li>
                         <li>
-                            <a href="#">Website</a>
-                        </li>
-                        <li>
-                            <a href="#">GitHub</a>
-                        </li>
-                        <li>
-                            <a href="#">Twitter</a>
-                        </li>
-                        <li>
-                            <a href="#">Spotify</a>
+                            <a href="https://github.com/katemccoll" target="_blank">GitHub</a>
                         </li>
                     </ul>
-            </div>
-
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="./assets/js/script.js"></script>
