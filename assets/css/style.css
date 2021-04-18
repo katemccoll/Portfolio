@@ -41,6 +41,7 @@ header h1 {
     color: var(--white);
 }
 
+
 .cursor {
     border-bottom: 0.4rem solid;
     animation: caret 1s steps(1) infinite;
@@ -85,13 +86,13 @@ nav a:hover {
 #home {
     background-image: url(../images/dunedin_light.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     color: var(--white);
     display: flex;
     width: -webkit-fill-available;
     justify-content: center;
-    height: 50rem;
+    height: 60rem;
     align-items: center;
 }
 
@@ -100,14 +101,16 @@ nav a:hover {
     padding: 2rem;
     text-align: center;
     font-size: xxx-large;
+    max-width: initial;
+    height: -webkit-fill-available;
 }
 
-.text-align {
+#about {
     text-align: center;
     margin: auto;
-    padding-top: 4rem;
+    padding: 4rem;
     width: 80%;
-    border-bottom: 0.5rem solid var(--darker-pink);
+    border-bottom: 5px solid var(--darker-pink);
 }
 
 
@@ -139,10 +142,8 @@ nav a:hover {
 }
 
 .container {
-    display: flex;
-    align-items: flex-start;
-    width: 90%;
-    margin: 1% auto;
+    width: 80%;
+    margin: auto;
 }
 
 
@@ -151,6 +152,7 @@ nav a:hover {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    margin: 2rem 0;
 }
 
 .column {
@@ -168,40 +170,64 @@ nav a:hover {
     font-size: 40px;
 }
 
-.content {
-    padding-left: 3%;
-    flex: 0 0 60%;
-    grid-column: 2 / span 3;
-    border-left: 2px solid var(--darker-pink);
+#about-me {
+    width: 80%;
+    border-bottom: 5px solid var(--darker-pink);
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+    line-height: 1.5;
+}
 
+.content {
+    flex: 0 0 70%;
+}
+
+#main-project {
+    display: grid;
+    margin: 4rem 0;
+    gap: 1rem;
+    grid-template-columns: 1fr repeat(12, 1fr);
+}
+
+#featured {
+    text-align: right;
+    color: var(--pink);
+}
+.featured-title {
+    width: 80%;
+    color: var(--darker-pink);
+}
+
+#featured-description {
+    background-color: var(--darker-pink);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .large_image {
-    border: 6px solid var(--pink);
+    border: 6px solid var(--darker-pink);
     width: 100%;
-    height: 600px;
     display: flex;
     object-position: top;
     object-fit: cover;
-    opacity: 0.5;
+    grid-column: 1 / 9;
+    grid-area: 1 / 6 / 1 / span 9;
 }
 
 .small_image {
-    border: 6px solid var(--pink);
+    border: 6px solid var(--darker-pink);
     width: 100%;
-    height: 200px;
+    height: 24rem;
     display: inline-flex;
     object-position: top;
     object-fit: cover;
-    opacity: 0.5;
 }
 
-img:hover {
-    opacity: 1;
-}
 
-.leading-project {
-    margin-right: 20px;
+.small-project {
+    width: 45%;
 
 }
 
@@ -224,18 +250,44 @@ img:hover {
     display: flex;
     position: relative;
     align-items: flex-start;
-    width: 90%;
-    margin: 1% auto;
-    grid-template-rows: repeat(10, 1fr);
+    width: 80%;
+    margin: auto;
 }
 
 .text-block {
     position: relative;
-    width: fit-content;
-    bottom: 80px;
-    background-color: var(--pink);
-    padding: 5px 20px;
+    padding: 1rem 0;
     line-height: 1.5;
+    text-align-last: left;
+    grid-column: 7 / -1;
+    grid-area: 1 / 1 / -1 / 7;
+    align-self: center;
+}
+
+.text-block ul {
+    flex-wrap: wrap;
+    grid-area: 1 / 1 / 1 / 7;
+    grid-column: 7 / -1;
+
+}
+
+.text-block ul li {
+    display: inline;
+    margin: 5px 20px 0 0;
+}
+
+.fa-link,
+.fa-github-square {
+    color: var(--pink);
+    font-size: 25px;
+    padding: 6px;
+    border: 0.2rem solid transparent;
+}
+
+.fa-link:hover,
+.fa-github-square:hover {
+    border: 0.2rem solid var(--pink);
+    border-radius: 1rem;
 }
 
 .project {
@@ -246,14 +298,18 @@ img:hover {
 
 /* Footer - Contact Me information */
 
+footer {
+    background-color: var(--darker-pink);
+    color: var(--white);
+}
+
 footer ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding-right: 0;
-    background-color: var(--darker-pink);
-    color: var(--white);
+
 }
 
 footer ul li {
@@ -268,6 +324,8 @@ footer a {
     padding: 5px 10px 5px;
 
 }
+
+
 
 /* Small devices (portrait tablets and large phones, 600px and down) */
 @media screen and (max-width: 600px) {
@@ -297,7 +355,7 @@ footer a {
 
     header nav ul {
         padding-right: 0;
-        flex-direction: column;
+
     }
 
     h2 {
