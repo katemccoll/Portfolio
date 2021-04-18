@@ -102,7 +102,7 @@ nav a:hover {
     text-align: center;
     font-size: xxx-large;
     max-width: initial;
-    height: -webkit-fill-available;
+    height: 20rem;
 }
 
 #about {
