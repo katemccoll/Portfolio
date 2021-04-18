@@ -349,7 +349,8 @@ footer a:hover {
     }
 
     header a {
-        font-size: 1rem;
+        padding: 0.5rem 0;
+        font-size: 12px;
     }
 
     h1 {
@@ -363,6 +364,10 @@ footer a:hover {
     .name {
         text-align: center;
         width: 100%;
+    }
+
+    #about {
+        padding: 2rem;
     }
 
     #profile {
@@ -437,9 +442,17 @@ footer a:hover {
         width: 100%;
         display: grid;
     }
+    header {
+        height: 2rem;
+    }
 
     header a {
-        font-size: 1rem;
+        padding: 1rem 0;
+        font-size: 10px;
+    }
+
+    #logo {
+        display: none;
     }
 
     h1 {
@@ -479,6 +492,9 @@ footer a:hover {
         padding-bottom: 5px;
     }
 
+    #about {
+        padding: 1rem;
+    }
     #profile {
         width: 70%;
     }
