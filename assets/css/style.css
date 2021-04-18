@@ -100,7 +100,7 @@ nav a:hover {
     margin: 10rem;
     padding: 2rem;
     text-align: center;
-    font-size: xxx-large;
+    font-size: 3rem;
     max-width: initial;
     height: 20rem;
 }
@@ -137,7 +137,7 @@ nav a:hover {
 #profile {
     border: 5px solid var(--darker-pink);
     border-radius: 1rem;
-    width: 25vw;
+    width: 25rem;
 
 }
 
@@ -342,18 +342,22 @@ footer a:hover {
 
 
 /* Small devices (portrait tablets and large phones, 600px and down) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     body {
         width: 100%;
         display: grid;
     }
 
     header a {
-        font-size: 8vw;
+        font-size: 1rem;
     }
 
-    header h1 {
-        font-size: 10vw;
+    h1 {
+        font-size: 3rem;
+    }
+
+    #home {
+        height: 30rem;
     }
 
     .name {
@@ -361,10 +365,14 @@ footer a:hover {
         width: 100%;
     }
 
+    #profile {
+        width: 70%;
+    }
+
+
     header {
         justify-content: center;
         align-items: center;
-        width: 100%;
     }
 
     header nav ul {
@@ -376,13 +384,11 @@ footer a:hover {
         padding-bottom: 5px;
     }
 
-    .heading {
-        text-align: left;
+    .center {
+        margin: 0;
+        padding: 6rem 0;
     }
 
-    .hero-image {
-        justify-content: center;
-    }
 
     .column {
         display: block;
@@ -392,20 +398,124 @@ footer a:hover {
         display: block;
     }
 
+    #main-project {
+        display: block;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .small-project {
+        width: 100%;
+    }
+
+    #contact-me {
+        font-size: 1rem;
+    }
 
     footer a{
-        font-size: 6vw;
+        font-size: 1rem;
     }
 
     footer {
         justify-content: center;
-        align-items: center;
+
     }
 
     footer nav ul {
         padding-right: 0;
-        flex-direction: column;
+    }
+    footer a:hover {
+        border: 0.2rem solid var(--white);
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        width: 100%;
+        display: grid;
     }
 
+    header a {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #home {
+        height: 15rem;
+    }
+
+    .center {
+        margin: 0;
+        padding: 6rem 0;
+    }
+
+    .name {
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #logo {
+        width: fit-content;
+    }
+
+    header nav ul {
+        padding-right: 0;
+        font-size: 10px;
+
+    }
+
+    h2 {
+        padding-bottom: 5px;
+    }
+
+    #profile {
+        width: 70%;
+    }
+
+
+    .column {
+        display: block;
+    }
+
+    .project {
+        display: block;
+    }
+
+    #contact-me {
+        font-size: 1rem;
+    }
+
+    footer a{
+        font-size: 1rem;
+    }
+
+    footer {
+        justify-content: center;
+
+    }
+
+    footer nav ul {
+        padding-right: 0;
+    }
+    footer a:hover {
+        border: 0.2rem solid var(--white);
+        border-radius: 1rem;
+    }
+    .content {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        line-height: 2;
+    }
 
 }
