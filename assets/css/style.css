@@ -165,9 +165,11 @@ nav a:hover {
     gap: 0 20px;
 }
 
-.heading {
+#contact-me {
     text-align: right;
     font-size: 40px;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 #about-me {
@@ -181,6 +183,8 @@ nav a:hover {
 
 .content {
     flex: 0 0 70%;
+    align-self: center;
+    font-size: 18px;
 }
 
 #main-project {
@@ -301,28 +305,38 @@ nav a:hover {
 footer {
     background-color: var(--darker-pink);
     color: var(--white);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 footer ul {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding-right: 0;
+    justify-content: space-around;
 
 }
 
 footer ul li {
-    display: inline-flex;
-    font-size: 1vw;
-    padding: 10px 15px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    display: inline;
+    height: 100%;
+
 }
 
 footer a {
-    padding: 5px 10px 5px;
+    color: var(--white);
+    text-decoration: none;
+    padding: 1rem;
+    margin: 1rem;
+    border: 0.2rem solid transparent;
 
+}
+
+footer a:hover {
+    border: 0.2rem solid var(--white);
+    border-radius: 1rem;
 }
 
 
