@@ -210,7 +210,6 @@ nav a:hover {
 }
 
 .large_image {
-    border: 6px solid var(--darker-pink);
     width: 100%;
     display: flex;
     object-position: top;
