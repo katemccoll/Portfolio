@@ -427,8 +427,9 @@ footer a:hover {
 
     }
 
-    footer nav ul {
+    footer ul {
         padding-right: 0;
+        font-size: 16px;
     }
     footer a:hover {
         border: 0.2rem solid var(--white);
@@ -447,7 +448,7 @@ footer a:hover {
 
     header a {
         padding: 1rem 0;
-        font-size: 10px;
+        font-size: 11px;
     }
 
     #logo {
@@ -483,16 +484,15 @@ footer a:hover {
 
     header nav ul {
         padding-right: 0;
-        font-size: 10px;
-
     }
 
     h2 {
         padding-bottom: 5px;
     }
 
-    #about {
+    #about-me {
         padding: 1rem;
+        width: 90%;
     }
     #profile {
         width: 70%;
@@ -512,7 +512,9 @@ footer a:hover {
     }
 
     footer a{
-        font-size: 1rem;
+        font-size: 11px;
+        padding: 1rem 0.6rem;
+        margin: 0;
     }
 
     footer {
@@ -520,13 +522,18 @@ footer a:hover {
 
     }
 
-    footer nav ul {
+    footer ul {
         padding-right: 0;
     }
     footer a:hover {
         border: 0.2rem solid var(--white);
         border-radius: 1rem;
     }
+
+    footer h2 {
+        display: none;
+    }
+
     .content {
         margin-bottom: 1.5rem;
         line-height: 2;
