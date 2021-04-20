@@ -28,20 +28,10 @@ function renderSkill(skillName, maxDurationMs) {
         letters++;
         let characters = skillName.substring(0, letters);
         $("#typewriter").html(characters);
-        // $("#typewriter").addClass('.line-blink');
         if (letters < skillName.length) {
             setTimeout(typewriterTimer, renderSpeed);
         }
     };
-
-
     typewriterTimer();
 
 }
-
-
-
-
-// when page loads, I want to bring up first index in the array, after one second, change to the next array
-
-
