@@ -89,7 +89,7 @@ You can find my resume as a pdf in this folder (on GitHub) or on my website.
 ## LinkedIn
 
 ![LinkedIn Profile](assets/images/portfolio/LinkedIn-1.JPG)
-![LinkedIn Project](asset/images/portfolio/LinkedIn-2.JPG)
+![LinkedIn Project](assets/images/portfolio/LinkedIn-2.JPG)
 
 
 ### If you have any questions or want more information, please feel free to reach out to me via email.
