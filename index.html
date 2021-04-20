@@ -6,148 +6,172 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1228d6a68f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Kate</title>
 </head>
 
 <body>
+    <header>
+        <h1 id="logo">K</h1>
+        <nav id="navbar">
+            <ul>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="Kate-McColl-Resume.pdf" download="Kate-McColl-Resume" target="_blank">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="home">
+        <div class="center">
+            <h1>Kate McColl</h1>
+            <h1><span id="typewriter"></span><span class="cursor"> </span></h1>
+        </div>
+    </section>
+    <main>
 
-        <header>
-            <h1 id="logo">K</h1>
-            <nav id="navbar">
-                <ul>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="http://google.com" target="_blank">Resume</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <div id="about">
+            <img id="profile" src="assets/images/Me.jpg" alt="Kate McColl">
+        </div>
+        <article id="about-me">
+            <p>
+                Hello! I am Kate, a Kiwi that is currently living over in Melbourne. Since completing my Fine Arts
+                degree at
+                the University of Canterbury in 2016, I have been working in an Australian art and gift shop.
+                While I enjoy the personal aspect of my job, it drains a lot of my artistic ambition, so when I come
+                home I
+                often want to get away from art.
+                A career as a web developer would be great because I'd be able to focus on solving interesting problems
+                during the day, while still having the energy and desire to create my art outside of work.
+            </p>
+            <br>
 
-        <section id="home">
-            <div class="center">
-                <h1>Kate McColl</h1>
-                <h1><span id="typewriter"></span><span class="cursor"> </span></h1>
-            </div>
-        </section>
-       <main>
+            <p>
+                Along with being creative, I am bubbly and known to always have a big smile on my face. I am dedicated
+                and
+                love looking at all the fine details, especially when it comes to puzzles and drawing realistic
+                portraits.
+                I love getting fully invested in something that I'm passionate about, and I find it incredibly rewarding
+                when the hard work pays off.
 
-           <div id="about">
-               <img id="profile" src="assets/images/Me.jpg" alt="Kate McColl">
-           </div>
-           <article id="about-me">
-                   <p>
-                       Hello! I am Kate, a Kiwi that is currently living over in Melbourne. Since completing my Fine Arts degree at the University of Canterbury in 2016, I have been working in an Australian art and gift shop.
-                       While I enjoy the personal aspect of my job, it drains a lot of my artistic ambition, so when I come home I often want to get away from art.
-                       A career as a web developer would be great because I'd be able to focus on solving interesting problems during the day, while still having the energy and desire to create my art outside of work.
-                   </p>
-               <br>
+            </p>
+            <br>
 
-                    <p>
-                        Along with being creative, I am bubbly and known to always have a big smile on my face. I am dedicated and love looking at all the fine details, especially when it comes to puzzles and drawing realistic portraits.
-                        I love getting fully invested in something that I'm passionate about, and I find it incredibly rewarding when the hard works pays off.
+            <p>
+                I am currently enrolled at Monash University Coding Bootcamp, very intense and fast pace but enjoy
+                learning and thinking about websites in a different way. I have really enjoyed creating websites from
+                scratch and looking for the small details to make the page better.
+                I love that I can bring my creative side to each of my assignments and using my knowledge to build a
+                site
+                like a jigsaw puzzle. I hope by the end of this course, I will have the confidence to build and create
+                innovate websites and bring my art skills into the digital art world.
 
-                    </p>
-               <br>
+            </p>
+        </article>
+        <div id="portfolio">
+            <section>
+                <article id="main-project">
+                    <img class="large_image" src="./assets/images/portfolio/marvel_superhero_locator.JPG"
+                        alt="Marvel Superhero Locator">
+                    <div class="text-block">
+                        <p id="featured">Featured Project</p>
+                        <h3 class="featured-title">Marvel SuperHero Locator</h3>
+                        <p id="featured-description">A website made for Marvel fans, by Marvel fans. You can search for
+                            your
+                            favourite heroes and receive their image, information, comics and youtube videos.
+                        </p>
+                        <ul>
+                            <li>Group Project</li>
+                            <li>jQuery</li>
+                            <li>Local Storage</li>
+                        </ul>
+                        <div class="icon">
+                            <a href="https://katemccoll.github.io/TeamProject-Marvel-Superhero-Locator"
+                                target="_blank"><i class="fas fa-link"></i></a>
+                            <a href="https://github.com/katemccoll/TeamProject-Marvel-Superhero-Locator"
+                                target="_blank"><i class="fab fa-github-square"></i></a>
+                        </div>
+                    </div>
 
-                   <p>
-                       I am currently enrolled at Monash University Coding Bootcamp, very intense and fast pace but enjoying learning and thinking about computers in a different way. I have really enjoyed creating websites from scratch and looking for the small details to make the page better.
-                       I love that I can bring my creative side to each of my assignments and using my knowledge to build a site like a jigsaw puzzle. I hope by the end of this course, I will have the confidence to build and create innovate websites and bring my art skills into the digital art world.
+                </article>
+                <!-- Small Images Inline -->
+                <section class="row">
+                    <!-- Project 2 -->
+                    <article class="small-project">
+                        <div>
+                            <img class="small_image" alt="Weather Dashboard"
+                                src="./assets/images/portfolio/weather_dashboard.JPG" target="_blank">
+                            <div class="text-block">
+                                <h3 class="featured-title">Weather Dashboard</h3>
+                                <p>Using Open Weather Map API to build a weather dashboard to search any city's current
+                                    weather and forecast for the next five days.</p>
+                                <ul>
+                                    <li>jQuery</li>
+                                    <li>API</li>
+                                    <li>Local Storage</li>
+                                </ul>
+                                <div class="icon">
+                                    <a href="https://katemccoll.github.io/Weather_Dashboard/" target="_blank"><i
+                                            class="fas fa-link"></i></a>
+                                    <a href="https://github.com/katemccoll/Weather_Dashboard" target="_blank"><i
+                                            class="fab fa-github-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project 3 -->
+                    <article class="small-project">
+                        <div>
+                            <img alt="Day Planner" src="./assets/images/portfolio/work_day.JPG" class="small_image">
+                            <div class="text-block">
+                                <h3 class="featured-title">Day Planner</h3>
+                                <p>A single web page day planner to keep track of event on for the day.</p>
+                                <ul>
+                                    <li>jQuery</li>
+                                    <li>Bootstrap</li>
+                                    <li>Local Storage</li>
+                                </ul>
+                                <div class="icon">
+                                    <a href="https://katemccoll.github.io/Work_Day_Scheduler/Develop/index.html"
+                                        target="_blank"><i class="fas fa-link"></i></a>
+                                    <a href="https://github.com/katemccoll/Work_Day_Scheduler" target="_blank"><i
+                                            class="fab fa-github-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
 
-                   </p>
-           </article>
-           <div id="portfolio">
-               <section>
-                   <article id="main-project">
-                       <img class="large_image" src="./assets/images/portfolio/marvel_superhero_locator.JPG" alt="Marvel Superhero Locator">
-                       <div class="text-block">
-                           <p id="featured">Featured Project</p>
-                           <h3 class="featured-title">Marvel SuperHero Locator</h3>
-                           <p id="featured-description">A website made for Marvel fans, by Marvel fans. You can search for your favourite heroes and receive their image, information, comics and youtube videos.</p>
-                           <ul>
-                               <li>jQuery</li>
-                               <li>API</li>
-                               <li>Local Storage</li>
-                           </ul>
-                           <div class="icon">
-                               <a href="https://katemccoll.github.io/TeamProject-Marvel-Superhero-Locator" target="_blank"><i class="fas fa-link"></i></a>
-                               <a href="https://github.com/katemccoll/TeamProject-Marvel-Superhero-Locator" target="_blank"><i class="fab fa-github-square"></i></a>
-                           </div>
-                       </div>
+            </section>
+        </div>
+    </main>
+    <footer id="contact">
+        <h2>Contact</h2>
+        <ul class="content">
+            <li><a href="tel:+61490808496">Click to Call</a></li>
+            <li>
+                <a href="mailto:kate@katemccollart.com">Email Me</a>
+            </li>
+            <li>
+                <a href="https://github.com/katemccoll" target="_blank">GitHub</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/kate-mccoll-a59389205/" target="_blank">LinkedIn</a>
+            </li>
 
-                   </article>
-                   <!-- Small Images Inline -->
-                   <section class="row">
-                       <!-- Project 2 -->
-                       <article class="small-project">
-                           <div>
-                                   <img class="small_image" alt="Weather Dashboard" src="./assets/images/portfolio/weather_dashboard.JPG" target="_blank">
-                                   <div class="text-block">
-                                       <h3 class="featured-title">Weather Dashboard</h3>
-                                       <p>Using Open Weather Map API to build a weather dashboard to search any city's current weather and forecast for the next five days.</p>
-                                       <ul>
-                                           <li>jQuery</li>
-                                           <li>API</li>
-                                           <li>Local Storage</li>
-                                       </ul>
-                                       <div class="icon">
-                                           <a href="https://katemccoll.github.io/Weather_Dashboard/" target="_blank"><i class="fas fa-link"></i></a>
-                                           <a href="https://github.com/katemccoll/Weather_Dashboard" target="_blank"><i class="fab fa-github-square"></i></a>
-                                       </div>
-                                   </div>
-                           </div>
-                       </article>
-                       <!-- Project 3 -->
-                       <article class="small-project">
-                           <div>
-                                   <img alt="Day Planner" src="./assets/images/portfolio/work_day.JPG" class="small_image" >
-                                   <div class="text-block">
-                                       <h3 class="featured-title">Day Planner</h3>
-                                       <p>A single web page day planner to keep track of event on for the day.</p>
-                                       <ul>
-                                           <li>jQuery</li>
-                                           <li>Bootstrap</li>
-                                           <li>Local Storage</li>
-                                       </ul>
-                                       <div class="icon">
-                                           <a href="https://katemccoll.github.io/Work_Day_Scheduler/Develop/index.html" target="_blank"><i class="fas fa-link"></i></a>
-                                           <a href="https://github.com/katemccoll/Work_Day_Scheduler" target="_blank"><i class="fab fa-github-square"></i></a>
-                                       </div>
-                                   </div>
-                           </div>
-                       </article>
-                   </section>
-
-               </section>
-           </div>
-        </main>
-        <footer id="contact">
-                <h2>Contact</h2>
-                    <ul class="content">
-                        <li><a href="tel:+61490808496">Click to Call</a></li>
-                        <li>
-                            <a href="mailto:kate@katemccollart.com">Email Me</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/katemccoll" target="_blank">GitHub</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/kate-mccoll-a59389205/" target="_blank">LinkedIn</a>
-                        </li>
-
-                    </ul>
-        </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="./assets/js/script.js"></script>
+        </ul>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
