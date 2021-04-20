@@ -32,7 +32,7 @@ From here I knew that I wanted my writing colour to be wite. I believe this is a
 I decided that instead of my name, I would create a logo. I went with something easy, but I think at the end of this course, I would like to create one from scratch. For now, just a K with a white border. Keeping it clean and simple. 
 For my nav links, I had them on the opposite end and decided to add the same border as the logo. To bring my website some repetition. I decided to put a transparent border around the words and when you hover, that is when it changes to white. 
 
-![Nav bar for website](assets\images\development\NavBar.JPG)
+![Nav bar for website](assets/images/development/NavBar.JPG)
 
 ## Typewriter
 
@@ -40,7 +40,7 @@ Here is where I wanted to show my JavaScript skills off. I originally look at th
 
 I did originally have a link blinking at the end of the word, but I decided to change this to a blinking line at the bottom. So it would represent the terminal. Getting that right was a lot of fun to do.
 
-![typewriter](assets\images\development\Typewriter-working.JPG)
+![typewriter](assets/images/development/Typewriter-working.JPG)
 
 
 ## Featured Project
@@ -51,7 +51,7 @@ I wanted to be different. I decided to add in a description of the project, tech
 
 I also left white space around the text block. One, to make the page less crowded. Give it more of a simple and clean vibe. Also, if I were to have more projects, or want to write more, then I have the template and room to do so.
 
-![Featured Project](assets\images\development\Featured-Project.JPG)
+![Featured Project](assets/images/development/Featured-Project.JPG)
 
 
 ## Small Projects
@@ -60,23 +60,23 @@ For the two chosen assignments, I decided to go with a card layout similar to we
 
 I also then added to my icons. I decided to add borders for these too. So when you hover, it will have a pink border.
 
-![small project](assets\images\development\small_project.JPG)
+![small project](assets/images/development/small_project.JPG)
 
 ## Footer
 
 Footer! Same layout as the previous portfolio, nice and simple.
 I added links for my phone number, email, linkedIn and gitHub. 
 
-![Footer](assets\images\development\footer.JPG)
+![Footer](assets/images/development/footer.JPG)
 
 Overall, really happy with my layout out. I completed what I wanted and feels very true to me. I also have a few ideas on what I want to do to improve this which I feel like I will keep adding to over this course.
 
 # Results - Mobile View
 
-![mobile view 1](assets\images\development\mobile-1.JPG)
-![mobile view 2](assets\images\development\mobile-2.JPG)
-![mobile view 3](assets\images\development\mobile-3.JPG)
-![mobile view 4](assets\images\development\mobile-4.JPG)
+![mobile view 1](assets/images/development/mobile-1.JPG)
+![mobile view 2](assets/images/development/mobile-2.JPG)
+![mobile view 3](assets/images/development/mobile-3.JPG)
+![mobile view 4](assets/images/development/mobile-4.JPG)
 
 
 ## Resume
@@ -84,12 +84,12 @@ You can find my resume as a pdf in this folder (on GitHub) or on my website.
 
 ## GitHub
 
-![GitHub Update](assets\images\portfolio\GitHub-update.JPG)
+![GitHub Update](assets/images/portfolio/GitHub-update.JPG)
 
 ## LinkedIn
 
-![LinkedIn Profile](assets\images\portfolio\LinkedIn-1.JPG)
-![LinkedIn Project](assets\images\portfolio\LinkedIn-2.JPG)
+![LinkedIn Profile](assets/images/portfolio/LinkedIn-1.JPG)
+![LinkedIn Project](asset/images/portfolio/LinkedIn-2.JPG)
 
 
 ### If you have any questions or want more information, please feel free to reach out to me via email.
