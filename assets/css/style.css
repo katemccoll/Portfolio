@@ -24,9 +24,6 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-/* Navbar */
-
 header {
     display: flex;
     justify-content: space-between;
@@ -40,7 +37,6 @@ header h1 {
     background-color: var(--pink);
     color: var(--white);
 }
-
 
 .cursor {
     border-bottom: 0.4rem solid;
@@ -113,9 +109,6 @@ nav a:hover {
     border-bottom: 5px solid var(--darker-pink);
 }
 
-
-/* Text boxes */
-
 .box {
     background-color: var(--pink);
     position: relative;
@@ -132,8 +125,6 @@ nav a:hover {
     background-color: var(--darker-pink);
 }
 
-/* About Me and Work */
-
 #profile {
     border: 5px solid var(--darker-pink);
     border-radius: 1rem;
@@ -145,7 +136,6 @@ nav a:hover {
     width: 80%;
     margin: auto;
 }
-
 
 .row {
     display: flex;
@@ -197,6 +187,7 @@ nav a:hover {
     text-align: right;
     color: var(--pink);
 }
+
 .featured-title {
     width: 80%;
     color: var(--darker-pink);
@@ -270,7 +261,7 @@ nav a:hover {
     flex-wrap: wrap;
     grid-area: 1 / 1 / 1 / 7;
     grid-column: 7 / -1;
-
+    width: 80%;
 }
 
 .text-block ul li {
@@ -298,8 +289,6 @@ nav a:hover {
     object-fit: cover;
 }
 
-/* Footer - Contact Me information */
-
 footer {
     background-color: var(--darker-pink);
     color: var(--white);
@@ -315,7 +304,6 @@ footer ul {
     flex-wrap: wrap;
     padding-right: 0;
     justify-content: space-around;
-
 }
 
 footer ul li {
@@ -330,15 +318,12 @@ footer a {
     padding: 1rem;
     margin: 1rem;
     border: 0.2rem solid transparent;
-
 }
 
 footer a:hover {
     border: 0.2rem solid var(--white);
     border-radius: 1rem;
 }
-
-
 
 /* Small devices (portrait tablets and large phones, 600px and down) */
 @media screen and (max-width: 768px) {
@@ -373,7 +358,6 @@ footer a:hover {
         width: 70%;
     }
 
-
     header {
         justify-content: center;
         align-items: center;
@@ -392,7 +376,6 @@ footer a:hover {
         margin: 0;
         padding: 6rem 0;
     }
-
 
     .column {
         display: block;
@@ -418,19 +401,19 @@ footer a:hover {
         font-size: 1rem;
     }
 
-    footer a{
+    footer a {
         font-size: 1rem;
     }
 
     footer {
         justify-content: center;
-
     }
 
     footer ul {
         padding-right: 0;
         font-size: 16px;
     }
+
     footer a:hover {
         border: 0.2rem solid var(--white);
         border-radius: 1rem;
@@ -442,6 +425,7 @@ footer a:hover {
         width: 100%;
         display: grid;
     }
+
     header {
         height: 2rem;
     }
@@ -478,6 +462,7 @@ footer a:hover {
         justify-content: center;
         align-items: center;
     }
+
     #logo {
         width: fit-content;
     }
@@ -494,6 +479,7 @@ footer a:hover {
         padding: 1rem;
         width: 90%;
     }
+
     #profile {
         width: 70%;
     }
@@ -511,7 +497,7 @@ footer a:hover {
         font-size: 1rem;
     }
 
-    footer a{
+    footer a {
         font-size: 11px;
         padding: 1rem 0.6rem;
         margin: 0;
@@ -525,6 +511,7 @@ footer a:hover {
     footer ul {
         padding-right: 0;
     }
+
     footer a:hover {
         border: 0.2rem solid var(--white);
         border-radius: 1rem;
