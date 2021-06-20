@@ -4,7 +4,7 @@ My Portfolio
 
 Technologies Used: HTML, CSS, JavaScript
 
-Live Link: https://katemccoll.github.io/Portfolio/
+Live Link:
 
 ## Requirements
 
