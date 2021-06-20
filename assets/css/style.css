@@ -86,7 +86,6 @@ nav a:hover {
     background-repeat: no-repeat;
     color: var(--white);
     display: flex;
-    width: -webkit-fill-available;
     justify-content: center;
     height: 60rem;
     align-items: center;
@@ -176,14 +175,14 @@ nav a:hover {
     font-size: 18px;
 }
 
-#main-project {
+.main-project {
     display: grid;
     margin: 4rem 0;
     gap: 1rem;
     grid-template-columns: 1fr repeat(12, 1fr);
 }
 
-#featured {
+.featured {
     text-align: right;
     color: var(--pink);
 }
@@ -193,7 +192,7 @@ nav a:hover {
     color: var(--darker-pink);
 }
 
-#featured-description {
+.featured-description {
     background-color: var(--darker-pink);
     color: var(--white);
     padding: 1rem;
@@ -385,7 +384,7 @@ footer a:hover {
         display: block;
     }
 
-    #main-project {
+    .main-project {
         display: block;
     }
 
